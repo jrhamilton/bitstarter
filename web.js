@@ -95,7 +95,7 @@ var addOrder = function(order_obj, callback) {
         callback();
       } else {
         // build instance and save
-          var new_order_instance = Order.build({
+        var new_order_instance = Order.build({
           coinbase_id: order.id,
           amount: order.total_btc.cents / 100000000, // convert satoshis to BTC
           time: order.created_at
